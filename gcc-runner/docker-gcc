@@ -7,14 +7,10 @@ else
     SRC="$(cd "$1" && pwd -P)"
 fi
 
-echo "$SRC"
-
-IMAGE_NAME="stephentuso/gcc-runner"
-
 printf "\n"
 echo "----------------------"
-printf "Running...\n"
+printf "Running main.c\n"
 echo "----------------------"
 printf "\n\n"
 
-docker run -it --rm -v "$SRC":/usr/src/myapp "$IMAGE_NAME"
+docker run -it --rm -v "$SRC":/usr/src/myapp "stephentuso/gcc-runner"
