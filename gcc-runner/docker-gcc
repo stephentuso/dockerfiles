@@ -13,4 +13,4 @@ printf "Running main.c\n"
 echo "----------------------"
 printf "\n\n"
 
-docker run -it --rm -v "$SRC":/usr/src/myapp "stephentuso/gcc-runner"
+docker run -it --rm -v "$SRC":/usr/src/app "stephentuso/gcc-runner"
