@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    # This script is assumed to be in project dir if no args passed
+    SRC="$(cd "$(dirname "$0")" && pwd -P)"
+else
+    SRC="$(cd "$1" && pwd -P)"
+fi
+
+echo "$SRC"
+
+IMAGE_NAME="stephentuso/gcc-runner"
+
+printf "\n"
+echo "----------------------"
+printf "Running...\n"
+echo "----------------------"
+printf "\n\n"
+
+docker run -it --rm -v "$SRC":/usr/src/myapp "$IMAGE_NAME"
