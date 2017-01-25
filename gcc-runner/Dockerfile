@@ -1,6 +1,6 @@
-FROM centos:7
+FROM alpine:latest
 
-RUN yum install -y gcc cmake
+RUN apk update && apk add build-base
 WORKDIR /usr/src/app
 CMD rm -rf build && \
 	mkdir build && \
