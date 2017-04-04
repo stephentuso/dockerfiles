@@ -9,7 +9,7 @@ fi
 
 printf "\n"
 echo "----------------------"
-printf "Running main.c\n"
+printf "Running\n"
 echo "----------------------"
 printf "\n\n"
 
