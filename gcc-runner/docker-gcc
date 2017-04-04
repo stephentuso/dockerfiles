@@ -6,10 +6,4 @@ else
     SRC="$(cd "$1" && pwd -P)"
 fi
 
-printf "\n"
-echo "----------------------"
-printf "Running\n"
-echo "----------------------"
-printf "\n\n"
-
 docker run -it --rm -v "$SRC":/usr/src/app "stephentuso/gcc-runner"
