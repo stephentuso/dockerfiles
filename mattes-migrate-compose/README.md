@@ -1,6 +1,6 @@
 # mattes-migrate-compose
 
-For running [migrate](https://github.com/mattes/migrate) in docker-compose - includes `bash` and [wait-for-it.sh](https.://github.com/vishnubob/wait-for-it) available as `wait-for-it`.
+For running [migrate](https://github.com/mattes/migrate) in docker-compose - includes `bash` and [wait-for-it.sh](https://github.com/vishnubob/wait-for-it) available as `wait-for-it`.
 
 For example:
 
